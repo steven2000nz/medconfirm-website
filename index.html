@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MedConfirm by Steven Liu Studio - Daily medication reminder app with family alerts. Never miss your medication again.">
+    <meta name="keywords" content="medication reminder, pill reminder, medication adherence, health app, family alerts">
+    <meta name="author" content="Steven Liu Studio">
+    <title>MedConfirm - Medication Reminder App | Steven Liu Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pill-icon {
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .description {
+            font-size: 1.1em;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .feature p {
+            color: #718096;
+            font-size: 0.95em;
+        }
+
+        .company-info {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .company-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.05em;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #f7fafc;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="pill-icon">💊</div>
+        </div>
+
+        <h1>MedConfirm</h1>
+        <p class="tagline">Never Miss Your Medication Again</p>
+
+        <p class="description">
+            Your reliable medication reminder companion. Set daily reminders, track your adherence,
+            and keep family members informed when you miss a dose.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>⏰ Daily Reminders</h3>
+                <p>Set your preferred reminder time and get reliable notifications every day</p>
+            </div>
+            <div class="feature">
+                <h3>✅ One-Tap Confirmation</h3>
+                <p>Quickly confirm when you've taken your medication with a single tap</p>
+            </div>
+            <div class="feature">
+                <h3>👨‍👩‍👧‍👦 Family Alerts</h3>
+                <p>Add a family contact to receive notifications if you miss a dose</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Track Adherence</h3>
+                <p>View your medication confirmation history and stay on track</p>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://play.google.com/store/apps" class="btn">Download on Google Play</a>
+            <a href="https://steven2000nz.github.io/medconfirm-privacy/" class="btn btn-secondary">Privacy Policy</a>
+        </div>
+
+        <div class="company-info">
+            <div class="company-name">Steven Liu Studio</div>
+
+            <div style="margin: 20px 0; padding: 20px; background: #f7fafc; border-radius: 10px; text-align: left;">
+                <h3 style="color: #2d3748; margin-bottom: 15px;">About Steven Liu Studio</h3>
+                <p style="color: #4a5568; margin-bottom: 10px;">
+                    Steven Liu Studio is a software development organization dedicated to creating health and wellness
+                    applications that improve people's lives. We specialize in user-friendly mobile applications
+                    that solve real-world health adherence challenges.
+                </p>
+                <p style="color: #4a5568;">
+                    Our flagship product, MedConfirm, was built from personal experience with medication adherence
+                    challenges and a commitment to helping families stay connected and healthy.
+                </p>
+            </div>
+
+            <div class="contact">
+                <div style="margin-bottom: 15px;">
+                    <strong style="color: #2d3748;">Contact Information</strong>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95em;">
+                    <div>
+                        <span style="color: #718096;">Email:</span>
+                        <a href="mailto:medconfirmhelp@gmail.com">medconfirmhelp@gmail.com</a>
+                    </div>
+                    <div style="color: #718096;">
+                        <span>Developer:</span> Steven Liu Studio
+                    </div>
+                    <div style="color: #718096;">
+                        <span>Support Hours:</span> Monday - Friday, 9 AM - 5 PM PST
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Steven Liu Studio. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <strong>Important:</strong> MedConfirm is a medication reminder tool and does not provide medical
+                advice,
+                diagnosis, or treatment. Always consult with a qualified healthcare professional for medical decisions.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
